@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Nur Rahmad Hidayat</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Porto<span>FC</span></div>
+    <ul class="nav-links">
+        <li><a href="#home">BERANDA</a></li>
+        <li><a href="#about">TENTANG SAYA</a></li>
+        <li><a href="#skills">KEMAMPUAN</a></li>
+    <li><a href="#loan-escape" id="nav-game">MINIGAME</a></li>
+        <li><a href="#contact">HUBUNGI SAYA</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Halo! Saya <span class="gradient">Nur Rahmad Hidayat</span></h1>
+        <p class="desc">Saya seorang Front-End Developer yang berfokus pada pengembangan antarmuka web yang interaktif, responsif, modern, dan berorientasi pada pengalaman pengguna. Berpengalaman dalam membangun tampilan website yang optimal di berbagai perangkat serta menjaga kualitas visual dan performa aplikasi.</p>
+        <div class="social-links">
+    <a href="mailto:Ppolkmqwasz01@gmail.com" class="social gmail"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://instagram.com/ocpyz25" target="_blank" class="social instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://wa.me/6282117409977" target="_blank" class="social whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+        <div class="hero-buttons">
+            <a href="#about" class="btn">Lainnya</a>
+            <a href="dataset/data.xlsx" class="btn-outline">Dataset</a>
+        </div>
+    </div>
+    <div class="hero-img">
+        <div class="img-wrapper">
+            <div class="overlay-top">
+                <h3 class="overlay-name gradient-text">Nur Rahmad Hidayat</h3>
+                <p class="overlay-role">Front-end Developer</p>
+            </div>
+            <img src="imtest/story.png" alt="Foto Profil Hologram" class="hero-image">
+            <div class="overlay-bottom">
+                <div class="profile-mini">
+                    <img src="imtest/hm.png" alt="Profile Pic" class="profile-pic">
+                    <div class="profile-info">
+                        <p class="username">@noname</p>
+                        <span class="status online">Online</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-small contact-btn">Hubungi Saya</a>
+            </div>
+        </div>
+    </div>
+    <div id="dataset-table"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <div class="left-area">
+        <div class="hanging-image">
+    <img src="imtest/mini.png" alt="Foto Saya">
+    <div class="overlay-text">
+    Front-End <span class="developer">Developer</span>
+</div>
+
+
+</div>
+    </div>
+    <div class="right-content">
+        <h1 class="title">Tentang Saya</h1>
+        <p class="desc">
+            Saya adalah seseorang yang memiliki ketertarikan pada teknologi, pengembangan sistem,
+            dan pembuatan proyek–proyek kreatif.  Saya senang belajar hal baru, eksplorasi ide, dan membangun solusi yang bermanfaat bagi
+            orang banyak. Dengan pengalaman yang terus berkembang, saya berusaha memberikan yang terbaik
+            dalam setiap proyek yang saya kerjakan.</p>
+        <div class="info-cards">
+            <div class="card"><div class="icon">💡</div><div class="text"><a href="#projects" class="hide-btn"><h3>Proyek</h3><p>Smart Switch Iot, Avoider Robotic, measure distance</p></a></div></div>
+            <div class="card"><div class="icon">📍</div><div class="text"><a href="https://maps.app.goo.gl/pKPovpGvtaPtzphW6" class="hide-btn"><h3>Lokasi</h3><p>Lumajang, Indonesia</p></a></div></div>
+            <div class="card"><div class="icon">🏫</div><div class="text"><a href="https://www.smkpasirian-lmj.sch.id/" class="hide-btn"><h3>Pendidikan</h3><p>1+ tahun di SMKN Pasirian</p></a></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Project -->
+<section class="projects-section" id="projects">
+    <h1 class="section-title">Projek Saya</h1>
+    <p class="section-desc">
+        Berikut adalah beberapa proyek yang telah saya kerjakan. Setiap proyek mencerminkan keterampilan saya dalam pengembangan web, IoT, robotika, dan inovasi teknologi lainnya. Klik salah satu proyek untuk melihat detailnya.
+    </p>
+
+    <div class="projects-container">
+
+        <div class="project-card" data-project="1">
+            <div class="project-img">
+                <img src="img/switch.jpeg" alt="Smart Switch Iot">
+            </div>
+            <div class="project-info">
+                <h3>Smart Switch IoT</h3>
+                <p>Proyek otomatisasi perangkat rumah berbasis IoT dengan kontrol jarak jauh.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="2">
+            <div class="project-img">
+                <img src="img/avo.jpeg" alt="Avoider Robotic">
+            </div>
+            <div class="project-info">
+                <h3>Avoider Robotic</h3>
+                <p>Robot penghindar rintangan dengan sensor ultrasonik untuk navigasi otomatis.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="3">
+            <div class="project-img">
+                <img src="img/distance.jpg" alt="Measure Distance">
+            </div>
+            <div class="project-info">
+                <h3>Measure Distance</h3>
+                <p>Alat pengukur jarak dengan akurasi tinggi menggunakan sensor digital.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal detail project -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="Project Image">
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+    <div class="skills-container">
+        <h1 class="title">Kemampuan</h1>
+
+        <div class="skills-group">
+            <h2>Technical Skills</h2>
+            <div class="skills-icons">
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <p>Git</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-group">
+            <h2>Profesional Skills</h2>
+            <div class="skills-icons">
+                <div class="skill-item">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Problem Solving</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-comments"></i>
+                    <p>Communication</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Time Management</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-users"></i>
+                    <p>Teamwork</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-arrows-spin"></i>
+                    <p>Adaptability</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GAME SECTION -->
+<section id="loan-escape" class="game-section hidden">
+  <h1>💰 Loan Escape</h1>
+<div class="game-container">
+  <div class="left-panel">
+    <div class="stat">balance: Rp <span id="saldo">1000</span></div>
+    <div class="stat">debt: Rp <span id="hutang">5000</span></div>
+    <div class="stat">
+      <span>period</span>
+      <span><span id="periode">1</span>/12</span>
+    </div>
+    <div class="stat">investment interest: <span id="investRate">10%</span></div>
+
+    <button id="btnBayar">pay installments </button>
+    <button id="btnInvest">investment</button>
+    <button id="btnUpgrade">Upgrade investment</button>
+    <button id="btnMini">get money</button>
+  </div>
+
+  <div class="right-panel">
+    <div id="log"></div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+    <div class="title">Hubungi Saya</div>
+    <p class="desc">Punya pertanyaan atau proyek yang ingin dibicarakan? Kirim pesan langsung melalui formulir di bawah ini!</p>
+
+    <div class="contact-flex">
+
+        <div class="chat-room dark-chat">
+            <h2 class="title">BOT😎😎</h2>
+            <div class="chat-messages" id="chat-messages"></div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Tulis pesan..." required>
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form" action="mailto:your-email@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="Nama" placeholder="Masukkan nama Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Masukkan email Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="Pesan" placeholder="Tulis pesan Anda..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>© 2025 Nur Rahmad Hidayat — Portfolio</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
